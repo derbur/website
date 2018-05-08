@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(() => {
                 write(greeting, greetingDiv);
             });
-    }, 300);
+    }, 400);
 });
 
 var write = (s, d) => {
