@@ -6,10 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let greetingDiv = document.querySelector('.greeting-text > .line-2');
     let hi = "Hello";
     let greeting = "Welcome to my website";
-    write(hi, helloDiv)
-        .then(() => {
-            write(greeting, greetingDiv);
-        });
+
+    setTimeout(() => {
+        write(hi, helloDiv)
+            .then(() => {
+                write(greeting, greetingDiv);
+            });
+    }, 300);
 });
 
 var write = (s, d) => {
